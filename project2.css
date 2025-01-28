@@ -1,0 +1,414 @@
+.header {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: black;
+}
+
+.website-name {
+  padding-left: 10px;
+  color: white;
+}
+
+.website-name:hover {
+  color: lightgray;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.mid-section {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mid-section:hover {
+  background-color: #07afd9;
+  transition: 0.5s;
+}
+
+.search-bar {
+  height: 30px;
+  padding-right: 10px;
+}
+
+.main-message {
+  margin-left: 600px;
+  margin-top: 150px;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.main-message:hover {
+  color: lightgray;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hero-section {
+  margin-left: 0;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.welcome-container {
+  height: 100px;
+}
+
+.welcome-header {
+  display: flex;
+  height: 100px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  color: #800000;
+}
+
+.welcome-main-msg {
+  display: flex;
+  height: 200px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #800000;
+}
+
+.grid-preview {
+  height: 35vh;
+  margin-top: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-preview img {
+  height: 250px;
+  width: 340px;
+}
+
+.picha:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.service {
+  margin-top: 70px;
+  height: 50px;
+  display: flex;
+  text-decoration: underline;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #800000;
+}
+
+.image-container {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.image-title {
+  padding-top: 20px;
+  padding-left: 32px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.input-container {
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  margin: 0.5rem;
+}
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  transition: all 300ms ease;
+  box-sizing: border-box;
+}
+
+.input-container ion-icon {
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+
+.input-container label {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.input:checked + .radio-tile {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 12px var(--primary-color);
+  transform: scale(1.1);
+}
+
+.input:hover + .radio-tile {
+  box-shadow: 0 0 12px var(--primary-color);
+}
+
+.input:checked + .radio-tile ion-icon,
+.input:checked + .radio-tile label {
+  color: white;
+}
+
+:root {
+  --primary-color: #07afd9;
+}
+
+.input-container:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 12px var(--primary-color);
+}
+
+.radio-tile ion-icon,
+.radio-tile label {
+  color: #800000; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  left: 0;
+}
+
+ul li a:hover {
+  background: #07afd9;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+ul.dropdown li a {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100%;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  margin-top: 700px;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+dl dt {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+dl dt a {
+  text-decoration: none;
+  color: #fff;
+}
+
+form {
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form ion-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  color: #ccc;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.social-icons .fab {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 10px;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copy-right {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
